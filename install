@@ -28,12 +28,14 @@ function copy_files($source, $target)
 $sourceDirs = [
     __DIR__ . '/application/controllers/blog',
     __DIR__ . '/application/helpers/blog',
+    __DIR__ . '/application/migrations',
     __DIR__ . '/application/models/blog',
     __DIR__ . '/application/views/blog',
 ];
 $targetDirs = [
     __DIR__ . '/../../../application/controllers/blog',
     __DIR__ . '/../../../application/helpers/blog',
+    __DIR__ . '/../../../application/migrations',
     __DIR__ . '/../../../application/models/blog',
     __DIR__ . '/../../../application/views/blog',
 ];
