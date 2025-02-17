@@ -1,0 +1,16 @@
+{
+    "name": "iceithq/cms-inferno-framework",
+    "description": "CMS Inferno Framework",
+    "homepage": "https://github.com/iceithq/cms-inferno-framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ian",
+            "email": "ian.escarro@gmail.com"
+        }
+    ],
+    "require": {
+        "iescarro/codeigniter3-framework": "^0.0.24",
+        "symfony/console": "^7.1"
+    }
+}
