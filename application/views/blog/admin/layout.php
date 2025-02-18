@@ -50,16 +50,16 @@
         <?php echo anchor('blog/posts', '📝 Posts', 'id="posts" class="nav-link"'); ?>
       </li>
       <li class="nav-item">
-        <?php echo anchor('comments', '💬 Comments', 'id="posts" class="nav-link"'); ?>
+        <?php echo anchor('blog/comments', '💬 Comments', 'id="posts" class="nav-link"'); ?>
       </li>
       <li class="nav-item">
-        <?php echo anchor('pages', '📄 Pages', 'id="pages" class="nav-link"'); ?>
+        <?php echo anchor('blog/pages', '📄 Pages', 'id="pages" class="nav-link"'); ?>
       </li>
       <li class="nav-item">
-        <?php echo anchor('menus', '🍽️ Menus', 'id="pages" class="nav-link"'); ?>
+        <?php echo anchor('blog/menus', '🍽️ Menus', 'id="pages" class="nav-link"'); ?>
       </li>
       <li class="nav-item">
-        <?php echo anchor('uploads', '📷️ Media', 'id="pages" class="nav-link"'); ?>
+        <?php echo anchor('blog/uploads', '📷️ Media', 'id="pages" class="nav-link"'); ?>
       </li>
     </ul>
     <ul class="navbar-nav">
