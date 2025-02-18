@@ -1,6 +1,18 @@
 <?php
 
-function post_views_to_column_chart_data($post_views) {
+/**
+ * CMS Inferno Framework
+ *
+ * A place to share your thoughts and ideas
+ *
+ * Copyright (c) 2024 ICE IT Solutions. All rights reserved.
+ *
+ * CMS Inferno Framework and its user interface are protected by trademark
+ * and other pending or existing intellectual property
+ * rights in the Philippines.
+ */
+function post_views_to_column_chart_data($post_views)
+{
   $categories = array();
   $data = array();
   foreach ($post_views as $post_view) {
@@ -10,7 +22,8 @@ function post_views_to_column_chart_data($post_views) {
   return array($categories, $data);
 }
 
-function post_view_form($post_id) {
+function post_view_form($post_id)
+{
   $obj = &get_instance();
   return array(
     'post_id' => $post_id,
@@ -19,7 +32,8 @@ function post_view_form($post_id) {
   );
 }
 
-function post_view_form_validate() {
+function post_view_form_validate()
+{
   $obj = &get_instance();
   $obj->form_validation->set_rules('post_id', 'Post_id', 'required');
   $obj->form_validation->set_rules('ip_address', 'Ip_address', 'required');

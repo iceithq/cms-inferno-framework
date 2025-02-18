@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * CMS Inferno Framework
+ *
+ * A place to share your thoughts and ideas
+ *
+ * Copyright (c) 2024 ICE IT Solutions. All rights reserved.
+ *
+ * CMS Inferno Framework and its user interface are protected by trademark
+ * and other pending or existing intellectual property
+ * rights in the Philippines.
+ */
 define('DEFAULT_DATE_FORMAT', 'Y-m-d');
 define('DEFAULT_DATETIME_FORMAT', 'Y-m-d H:i:s');
 define('READABLE_DATETIME_FORMAT', 'M,d Y g:i A');

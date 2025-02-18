@@ -1,8 +1,18 @@
 <?php
 
+/**
+ * CMS Inferno Framework
+ *
+ * A place to share your thoughts and ideas
+ *
+ * Copyright (c) 2024 ICE IT Solutions. All rights reserved.
+ *
+ * CMS Inferno Framework and its user interface are protected by trademark
+ * and other pending or existing intellectual property
+ * rights in the Philippines.
+ */
 class Folders extends CI_Controller
 {
-
   var $folder_model;
   var $upload_model;
 

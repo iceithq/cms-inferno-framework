@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * CMS Inferno Framework
+ *
+ * A place to share your thoughts and ideas
+ *
+ * Copyright (c) 2024 ICE IT Solutions. All rights reserved.
+ *
+ * CMS Inferno Framework and its user interface are protected by trademark
+ * and other pending or existing intellectual property
+ * rights in the Philippines.
+ */
 class Home extends CI_Controller
 {
   var $user_model;
@@ -18,10 +29,7 @@ class Home extends CI_Controller
   {
     parent::__construct();
     $this->load->helper(['html', 'url', 'form', 'blog/date', 'blog/post', 'blog/post_view']);
-    // $this->load->model('user_model');
     $this->load->model('blog/post_model');
-    // $this->load->model('page_model');
-    // $this->load->model('menu_model');
     $this->load->model('blog/post_view_model');
     $this->load->library('session');
     $this->load->library('blog/admin_service');
