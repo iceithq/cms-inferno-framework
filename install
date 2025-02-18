@@ -36,7 +36,7 @@ $sourceDirs = [
 $targetDirs = [
     __DIR__ . '/../../../application/controllers/blog',
     __DIR__ . '/../../../application/helpers/blog',
-    __DIR__ . '/../../../application/libraries',
+    __DIR__ . '/../../../application/libraries/blog',
     __DIR__ . '/../../../application/migrations',
     __DIR__ . '/../../../application/models/blog',
     __DIR__ . '/../../../application/views/blog',
