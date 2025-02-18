@@ -8,7 +8,7 @@
   </tr>
   <?php foreach ($pages as $page): ?>
     <tr>
-      <td><?php echo anchor('blog/page/' . $page->id, $page->title); ?></td>
+      <td><?php echo anchor('blog/home/page/' . $page->id, $page->title); ?></td>
       <td><?php echo $page->created_at; ?></td>
       <td nowwrap>
         <?php echo anchor('blog/pages/edit/' . $page->id, 'Edit', 'id="edit_page_' . $page->id . '"'); ?>

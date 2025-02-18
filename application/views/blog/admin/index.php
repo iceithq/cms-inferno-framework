@@ -1,6 +1,6 @@
 <h3>My home
   <span class="pull-right">
-    <?php echo anchor('.', 'Visit site', 'target="_blank" class="btn btn-primary"'); ?>
+    <?php echo anchor('blog/home', 'Visit site', 'target="_blank" class="btn btn-primary"'); ?>
   </span>
 </h3>
 <p>Your central hub for taking the next steps, accessing our support center, and navigating through quick links.</p>
@@ -74,12 +74,12 @@
 <h4>Quick links</h4>
 <ul>
   <li>
-    <?php echo anchor('posts/add', '📝 Write a blog post'); ?>
+    <?php echo anchor('blog/posts/add', '📝 Write a blog post'); ?>
   </li>
   <li>
-    <?php echo anchor('pages/add', '📄 Add a page'); ?>
+    <?php echo anchor('blog/pages/add', '📄 Add a page'); ?>
   </li>
   <li>
-    <?php echo anchor('uploads/add', '📷 Upload media'); ?>
+    <?php echo anchor('blog/uploads/add', '📷 Upload media'); ?>
   </li>
 </ul>

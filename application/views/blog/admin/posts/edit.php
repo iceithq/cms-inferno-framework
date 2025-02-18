@@ -2,7 +2,7 @@
   Update post
 </h3>
 <p>
-  <?php echo anchor('blog/post/' . $post->id, '👁️ View post', 'target="_blank"'); ?>
+  <?php echo anchor('blog/home/post/' . $post->id, '👁️ View post', 'target="_blank"'); ?>
 </p>
 <?php echo form_open('blog/posts/edit/' . $post->id); ?>
 <p>Title<br>

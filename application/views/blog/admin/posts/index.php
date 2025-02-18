@@ -23,7 +23,7 @@
         <?php echo anchor('blog/posts/edit/' . $post->id, $post->title); ?>
       </td>
       <td>
-        <?php echo anchor('blog/post/' . $post->id . '/' . perma_link($post->title), '👁️', 'target="_blank"'); ?>
+        <?php echo anchor('blog/home/post/' . $post->id . '/' . perma_link($post->title), '👁️', 'target="_blank"'); ?>
       </td>
       <td>
         <?php echo $post->created_at; ?>
