@@ -1,19 +1,22 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide mt-3" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="public/themes/ccnshs/img/551dd648-dd6a-4c0f-b8ee-e03750af0ca6.jpg" alt="Second slide">
+      <img src="https://www.imgenerate.com/generate?text=First slide&width=800&height=400"
+        class="d-block w-100" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://static.wixstatic.com/media/eaa662_6d6c4ecfb9aa4bd0bbd2f685905d9185~mv2.jpg/v1/fill/w_640,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/eaa662_6d6c4ecfb9aa4bd0bbd2f685905d9185~mv2.jpg" alt="First slide">
+      <img src="https://www.imgenerate.com/generate?text=Second slide&width=800&height=400"
+        class="d-block w-100" alt="Second slide">
     </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src="https://via.placeholder.com/800x400?text=Slide+3" alt="Third slide">
-    </div> -->
+    <div class="carousel-item">
+      <img src="https://www.imgenerate.com/generate?text=Third slide&width=800&height=400"
+        class="d-block w-100" alt="Third slide">
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

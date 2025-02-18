@@ -1,10 +1,27 @@
 <?php
 
-function upload_url($upload) {
+function upload_config()
+{
+  $upload_path = './media';
+  if (!is_dir($upload_path)) {
+    mkdir($upload_path);
+  }
+  return array(
+    'upload_path' => $upload_path,
+    'allowed_types' => 'gif|jpg|jpeg|png',
+    // 'max_size' => 2014,
+    // 'max_width' => 2048,
+    // 'max_height' => 2048,
+  );
+}
+
+function upload_url($upload)
+{
   return base_url() . 'media/' . $upload->url;
 }
 
-function get_upload_url($upload) {
+function get_upload_url($upload)
+{
   $upload_url = $upload->url ? 'media/' . $upload->url : '';
   if ($upload_url && file_exists($upload_url)) {
     return $upload_url;
@@ -13,7 +30,8 @@ function get_upload_url($upload) {
   return '';
 }
 
-function upload_form() {
+function upload_form()
+{
   $obj = &get_instance();
   return array(
     'title' => $obj->input->post('title'),
@@ -22,7 +40,8 @@ function upload_form() {
   );
 }
 
-function upload_minimal_form($folder_id) {
+function upload_minimal_form($folder_id)
+{
   $obj = &get_instance();
   return array(
     'folder_id' => $folder_id,
@@ -30,7 +49,8 @@ function upload_minimal_form($folder_id) {
   );
 }
 
-function upload_form_validate() {
+function upload_form_validate()
+{
   $obj = &get_instance();
   // $obj->form_validation->set_rules('url', 'Url', 'required');
   $obj->form_validation->set_rules('title', 'Title', 'required');
@@ -38,7 +58,8 @@ function upload_form_validate() {
   // $obj->form_validation->set_rules('description', 'Description', 'required');
 }
 
-function upload_minimal_form_validate() {
+function upload_minimal_form_validate()
+{
   $obj = &get_instance();
   // $obj->form_validation->set_rules('url', 'Url', 'required');
   // $obj->form_validation->set_rules('title', 'Title', 'required');

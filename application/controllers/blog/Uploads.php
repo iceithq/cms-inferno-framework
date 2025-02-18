@@ -13,8 +13,12 @@ class Uploads extends CI_Controller
   function __construct()
   {
     parent::__construct();
+    $this->load->helper(['html', 'url', 'form', 'blog/upload']);
     $this->load->model('blog/upload_model');
     $this->load->model('blog/folder_model');
+    $this->load->library('form_validation');
+    $this->load->library('layout');
+    $this->layout->set('blog/admin/layout');
   }
 
   function index()
@@ -44,7 +48,7 @@ class Uploads extends CI_Controller
         $this->upload_model->save($upload);
         redirect('blog/uploads');
       } else {
-        print_pre(validation_errors());
+        // print_pre(validation_errors());
       }
     }
     $this->layout->view('blog/admin/uploads/add');
