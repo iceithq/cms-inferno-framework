@@ -1,2 +1,2 @@
 
-<?php load_view('folders/uploads'); ?>
+<?php load_view('blog/admin/folders/uploads'); ?>

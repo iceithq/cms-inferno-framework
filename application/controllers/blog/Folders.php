@@ -23,7 +23,7 @@ class Folders extends CI_Controller
   function __construct()
   {
     parent::__construct();
-    $this->load->helper(['html', 'url', 'form', 'blog/folder']);
+    $this->load->helper(['html', 'url', 'form', 'blog/folder', 'blog/date']);
     $this->load->model('blog/folder_model');
     $this->load->model('blog/upload_model');
     $this->load->library('form_validation');
@@ -34,7 +34,7 @@ class Folders extends CI_Controller
   function index()
   {
     $data['folders'] = $this->folder_model->find_all();
-    $this->layout->view('blog/folders/index', $data);
+    $this->layout->view('blog/admin/folders/index', $data);
   }
 
   function show($id)
